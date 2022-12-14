@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>The XMLHttpRequest Object</p>
+
+    <button type="button" onclick="loadDoc()">Request data</button>
+
+    <p id="demo"></p>
+    <img id="myimage" />
+
+
+    <button onclick="myfunction()">What Amiibo do you want ?</button>
+    <script>
+      function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            var data = JSON.parse(this.responseText);
+            document.getElementById("myimage").src = data.amiibo[0].image;
+          }
+        };
+        xhttp.open(
+          "GET",
+          "https://www.amiiboapi.com/api/amiibo/?name=link",
+          true
+        );
+        xhttp.send();
+      }
+
+      function myfunction(){
+        let x = prompt("what ups?")
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            var data = JSON.parse(this.responseText);
+            document.getElementById("myimage").src = data.amiibo[0].image;
+          }
+        };
+        xhttp.open(
+          "GET",
+          "https://www.amiiboapi.com/api/amiibo/?name="+ x ,
+          true
+        );
+        xhttp.send();
+        
+      }
+    </script>
+  </body>
+</html>

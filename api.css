@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Rubik:wght@300&display=swap");
+
+body {
+  background-color: #1b1d36;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #99d6ea;
+  font-size: 3rem;
+  font-family: "Ibarra Real Nova", serif;
+  font-family: "Rubik", sans-serif;
+
+  text-shadow: 0 0 10px #99d6ea;
+}
+
+/*image*/
+img {
+  float: right;
+  padding: 20;
+  color: #333;
+  border-radius: 20%;
+  box-shadow: 0 0 10px #99d6ea;
+}
+
+.img {
+  
+  display: inline-flex;
+  margin: auto 130px;
+  float: right;
+  width: 200px;
+  height: 300px;
+
+  
+}
+/*Button*/
+#btn {
+  position: relative;
+  height: 60px;
+  width: 400px;
+  left: 100px;
+  top: 200px;
+  border: 0px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #99d6ea;
+  font-family: "Ibarra Real Nova", serif;
+  font-family: "Rubik", sans-serif;
+}
+
+.fade-in-image {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
