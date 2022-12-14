@@ -1,1 +1,3 @@
-website link : https://github.com/ImagineA1m/Amiibo-Api
+website link :
+
+https://imaginea1m.github.io/Amiibo-Api/api.html
