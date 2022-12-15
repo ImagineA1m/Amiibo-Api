@@ -11,28 +11,40 @@ h1 {
   font-size: 3rem;
   font-family: "Ibarra Real Nova", serif;
   font-family: "Rubik", sans-serif;
-
   text-shadow: 0 0 10px #99d6ea;
+}
+
+.name {
+  position: relative;
+  float: right;
+  color: #99d6ea;
+  font-size: 3rem;
+  font-family: "Ibarra Real Nova", serif;
+  font-family: "Rubik", sans-serif;
+  text-shadow: 0 0 10px #99d6ea;
+  left: -210px;
+  top: -20px;
 }
 
 /*image*/
 img {
-  float: right;
   padding: 20;
-  color: #333;
+  color: #99d6ea;
   border-radius: 20%;
   box-shadow: 0 0 10px #99d6ea;
+  font-size: 3rem;
+  text-shadow: 0 0 10px #99d6ea;
+  top: 900px;
 }
 
 .img {
-  
+  position: relative;
   display: inline-flex;
   margin: auto 130px;
-  float: right;
   width: 200px;
   height: 300px;
-
-  
+  left: 800px;
+  top: 1;
 }
 /*Button*/
 #btn {
@@ -60,26 +72,46 @@ img {
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-o-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-ms-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
