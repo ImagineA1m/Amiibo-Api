@@ -16,7 +16,7 @@ function myfunction(){
   );
   xhttp.send();
 
-  // new comment                                               name
+  // Get Name From The Api
 
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
@@ -32,6 +32,33 @@ function myfunction(){
   );
   xhttp.send();
 
+// Get GAME From The Api
 
-  
+var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      var data = JSON.parse(this.responseText);
+      document.getElementById("game").innerHTML = data.amiibo[0].gameSeries;
+    }
+  };
+  xhttp.open(
+    "GET",
+    "https://www.amiiboapi.com/api/amiibo/?name="+ x ,
+    true
+  );
+  xhttp.send();
+  // release date for amiibo
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      var data = JSON.parse(this.responseText);
+      document.getElementById("na").innerHTML = data.amiibo[0].release.na;
+    }
+  };
+  xhttp.open(
+    "GET",
+    "https://www.amiiboapi.com/api/amiibo/?name="+ x ,
+    true
+  );
+  xhttp.send();
 }

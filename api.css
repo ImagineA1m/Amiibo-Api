@@ -14,37 +14,62 @@ h1 {
   text-shadow: 0 0 10px #99d6ea;
 }
 
-.name {
-  position: relative;
-  float: right;
+h3 {
   color: #99d6ea;
-  font-size: 3rem;
+  font-size: 1rem;
+  font-family: "Ibarra Real Nova", serif;
+  font-family: "Rubik", sans-serif;
+  text-shadow: 0 0 10px #99d6ea;
+  text-align: center;
+}
+.game{
+  color: #99d6ea;
+  font-size: 2rem;
+  font-family: "Ibarra Real Nova", serif;
+  font-family: "Rubik", sans-serif;
+  text-shadow: 0 0 10px #99d6ea;
+  text-align: left;
+
+}
+
+#game {
+  color: #99d6ea;
+  font-size: 1rem;
+  text-align: center;
+  display: grid;
+}
+.name {
+  color: #99d6ea;
+  font-size: 1rem;
   font-family: "Ibarra Real Nova", serif;
   font-family: "Rubik", sans-serif;
   text-shadow: 0 0 10px #99d6ea;
   left: -210px;
   top: -20px;
+  text-align: center;
 }
 
 /*image*/
 img {
   padding: 20;
   color: #99d6ea;
-  border-radius: 20%;
+  border-radius: 10%;
   box-shadow: 0 0 10px #99d6ea;
   font-size: 3rem;
   text-shadow: 0 0 10px #99d6ea;
   top: 900px;
+  width: 250px;
 }
 
 .img {
   position: relative;
   display: inline-flex;
   margin: auto 130px;
-  width: 200px;
+  width: 50px;
   height: 300px;
   left: 800px;
   top: 1;
+  
 }
 /*Button*/
 #btn {
@@ -115,3 +140,73 @@ img {
     opacity: 1;
   }
 }
+
+a:hover {
+  text-decoration: none;
+}
+
+
+
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip  on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+
