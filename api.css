@@ -1,49 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Rubik:wght@300&display=swap");
-
+:root {
+  --color-text: #99d6ea;
+  --body-color: #1b1d36;
+}
 body {
-  background-color: #1b1d36;
+  background-color: var(--body-color);
   margin: 0;
 }
 
 h1 {
   text-align: center;
-  color: #99d6ea;
+  color: var(--color-text);
   font-size: 3rem;
   font-family: "Ibarra Real Nova", serif;
   font-family: "Rubik", sans-serif;
-  text-shadow: 0 0 10px #99d6ea;
+  text-shadow: 0 0 10px var(--color-text);
 }
 
 h3 {
-  color: #99d6ea;
+  color: var(--color-text);
   font-size: 1rem;
   font-family: "Ibarra Real Nova", serif;
   font-family: "Rubik", sans-serif;
-  text-shadow: 0 0 10px #99d6ea;
+  text-shadow: 0 0 10px var(--color-text);
   text-align: center;
 }
-.game{
-  color: #99d6ea;
+.game {
+  color: var(--color-text);
   font-size: 2rem;
   font-family: "Ibarra Real Nova", serif;
   font-family: "Rubik", sans-serif;
-  text-shadow: 0 0 10px #99d6ea;
+  text-shadow: 0 0 10px var(--color-text);
   text-align: left;
-
 }
 
 #game {
-  color: #99d6ea;
+  color: var(--color-text);
   font-size: 1rem;
   text-align: center;
   display: grid;
 }
 .name {
-  color: #99d6ea;
+  color: var(--color-text);
   font-size: 1rem;
   font-family: "Ibarra Real Nova", serif;
   font-family: "Rubik", sans-serif;
-  text-shadow: 0 0 10px #99d6ea;
+  text-shadow: 0 0 10px var(--color-text);
   left: -210px;
   top: -20px;
   text-align: center;
@@ -52,11 +54,11 @@ h3 {
 /*image*/
 img {
   padding: 20;
-  color: #99d6ea;
+  color: var(--color-text);
   border-radius: 10%;
-  box-shadow: 0 0 10px #99d6ea;
+  box-shadow: 0 0 10px var(--color-text);
   font-size: 3rem;
-  text-shadow: 0 0 10px #99d6ea;
+  text-shadow: 0 0 10px var(--color-text);
   top: 900px;
   width: 250px;
 }
@@ -69,7 +71,6 @@ img {
   height: 300px;
   left: 800px;
   top: 1;
-  
 }
 /*Button*/
 #btn {
@@ -83,7 +84,7 @@ img {
   cursor: pointer;
   text-align: center;
   border-radius: 30px;
-  box-shadow: 0 0 10px #99d6ea;
+  box-shadow: 0 0 10px var(--color-text);
   font-family: "Ibarra Real Nova", serif;
   font-family: "Rubik", sans-serif;
 }
@@ -95,6 +96,334 @@ img {
   -o-animation: fadeIn 5s;
   -ms-animation: fadeIn 5s;
 }
+
+
+#themebtn_id{
+  position:relative;
+  height: 1px;
+  width: 90px;
+  left: 100px;
+  top: 100px;
+  border: 90px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 100%;
+  box-shadow: 0 0 10px var(--color-text);
+  font-family: "Ibarra Real Nova", serif;
+  font-family: "Rubik", sans-serif;
+  color: var(--color-text);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes fadeIn {
   0% {
@@ -144,8 +473,6 @@ img {
 a:hover {
   text-decoration: none;
 }
-
-
 
 [data-tooltip] {
   position: relative;
@@ -204,9 +531,6 @@ a:hover {
 [data-tooltip]:hover:before,
 [data-tooltip]:hover:after {
   visibility: visible;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-
 

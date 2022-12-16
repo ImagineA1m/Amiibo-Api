@@ -5,11 +5,7 @@
   <link rel="icon" type="image" href="amiibologo.png" />
   <body>
     <h1>Get Amiibos!</h1>
-
-    <audio autoplay src="zelda.mp3"></audio>
-    
-
-    <!--Button Function-->
+    <!--Button-->
     <div class="fade-in-image">
       <button onclick="myfunction()" id="btn">
         What Amiibo Do You Want To Search?
@@ -19,19 +15,34 @@
     <div class="img">
       <img src="" id="img" alt="Loading..." />
     </div>
-<h3>
-  ⬇ Info ⬇
-</h3>
-<div class="game">
- <p id="game" data-tooltip="GameSeries"></p>
-</div>
-<div class="name">
-  <p id="demo" data-tooltip="Character"></p>
-</div>
-<div class="name">
-  <p id="na" data-tooltip="Release"></p>
-</div>
-
+    <!--Info Area Contains Details of the character-->
+    <div>
+      <h3>⬇ Info ⬇</h3>
+      <div class="game">
+        <p id="game" data-tooltip="GameSeries"></p>
+      </div>
+      <div class="name">
+        <p id="demo" data-tooltip="Character"></p>
+      </div>
+      <div class="name">
+        <p id="na" data-tooltip="Release"></p>
+      </div>
+    </div>
+    <!-- ⬇ Theme Buttons ⬇ -->
+    <div class="themebtn">
+      <button id="themebtn_id" onclick="Cyber()">Cyber Space</button>
+      <button id="themebtn_id" onclick="Cafe()">Cafe Theme</button>
+      <button id="themebtn_id" onclick="JungleMint()">Jungle Mint</button>
+      <button id="themebtn_id" onclick="VsCode()">Vs Code</button>
+      <button id="themebtn_id" onclick="Matrix()">Matrix</button>
+      <button id="themebtn_id" onclick="Orangeful()">Orangeful</button>
+      <button id="themebtn_id" onclick="def()">Default Theme</button><!--The Middle-->
+      <button id="themebtn_id" onclick="WateryOcean()">WateryOcean?!</button>
+      <button id="themebtn_id" onclick="Bricked()">Bricked</button>
+      <button id="themebtn_id" onclick="MintyGum()">MintyGum</button>
+      <button id="themebtn_id" onclick="GoldieHoney()">GoldieHoney</button>
+      <button id="themebtn_id" onclick="GigaChad()">GigaChad</button>
+    </div>
 
     <!--links-->
     <link rel="stylesheet" href="api.css" />

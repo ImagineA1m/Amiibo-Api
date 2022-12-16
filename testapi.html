@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        let api = "https://www.amiiboapi.com/api/amiibo/?name=mario" 
+        fetch(api)
+        .then(res => res.json())
+        .then((data) => PPSet(data))
+        function PPSet(object){
+            console.log(object)
+        }
+    </script>
+</body>
+</html>
